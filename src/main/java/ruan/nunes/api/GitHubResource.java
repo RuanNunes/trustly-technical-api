@@ -1,13 +1,14 @@
 package ruan.nunes.api;
 
 import ruan.nunes.api.contract.GitHubApi;
+import ruan.nunes.domain.RepositoryDTO;
 
 public class GitHubResource implements GitHubApi {
 
 	@Override
-	public String getInfo() {
+	public RepositoryDTO getInfo(final String url) {
 		
-		return "teste";
+		return null;
 	}
     
 }
