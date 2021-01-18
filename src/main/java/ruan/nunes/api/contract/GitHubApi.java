@@ -17,7 +17,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 @Produces(MediaType.APPLICATION_JSON)
 public interface GitHubApi {
     @GET
-    @Path("{url}")
+    @Path("/{url}")
     @APIResponse(responseCode = "200",
             description = "return info for repository",
             content = @Content(schema = @Schema(implementation = String.class)))
