@@ -12,5 +12,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class RepositoryDTO {
+    private String url;
     private List<File> files;
+    private List<GitHubHtml> gitHubHtmls;
 }

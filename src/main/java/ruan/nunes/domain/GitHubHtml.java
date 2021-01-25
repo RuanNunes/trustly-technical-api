@@ -8,13 +8,11 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
+@Setter
 @Builder
-public class File {
-    private String url;
+public class GitHubHtml {
     private String title;
-    private String type;
-    private String size;
-    private int lines;
+    private String href;
+    private boolean folder;
 }
