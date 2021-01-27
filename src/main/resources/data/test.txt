@@ -1,0 +1,55 @@
+{
+    "url": "https://github.com/RuanNunes/test",
+    "files": [
+      {
+        "url": "https://github.com//RuanNunes/test/blob/main/teste.java",
+        "title": "teste",
+        "type": "java",
+        "size": "28 Bytes",
+        "lines": 3
+      },
+      {
+        "url": "https://github.com//RuanNunes/test/blob/main/teste.json",
+        "title": "teste",
+        "type": "json",
+        "size": "24 Bytes",
+        "lines": 3
+      },
+      {
+        "url": "https://github.com//RuanNunes/test/blob/main/README.md",
+        "title": "README",
+        "type": "md",
+        "size": "6 Bytes",
+        "lines": 1
+      },
+      {
+        "url": "https://github.com//RuanNunes/test/blob/main/teste.xml",
+        "title": "teste",
+        "type": "xml",
+        "size": "4.66 KB",
+        "lines": 135
+      }
+    ],
+    "gitHubHtmls": [
+      {
+        "title": "README.md",
+        "href": "/RuanNunes/test/blob/main/README.md",
+        "folder": false
+      },
+      {
+        "title": "teste.java",
+        "href": "/RuanNunes/test/blob/main/teste.java",
+        "folder": false
+      },
+      {
+        "title": "teste.json",
+        "href": "/RuanNunes/test/blob/main/teste.json",
+        "folder": false
+      },
+      {
+        "title": "teste.xml",
+        "href": "/RuanNunes/test/blob/main/teste.xml",
+        "folder": false
+      }
+    ]
+  }
