@@ -1,28 +1,13 @@
 package ruan.nunes;
 
 import io.quarkus.test.junit.QuarkusTest;
-import io.restassured.matcher.ResponseAwareMatcher;
-import io.restassured.response.Response;
-
 import org.junit.jupiter.api.Test;
-
-import groovyjarjarantlr4.v4.parse.ANTLRParser.wildcard_return;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
-
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Map;
 import java.util.Scanner;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.containsString;
-
-
 @QuarkusTest
 public class GitHubResourceTest {
 
@@ -51,5 +36,4 @@ public class GitHubResourceTest {
         }
         return text;
     }
-
 }

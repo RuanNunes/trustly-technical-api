@@ -33,9 +33,15 @@ public class GitHubHtmlService {
         for (String string : split) {
             if(string.contains("</a></span>")){
                 String[] sliptSubIndex = string.split("href");
-                final String title = sliptSubIndex[0].replace("\"", "").trim();
+                String title = sliptSubIndex[0].replace("\"", "").trim().replace("data-pjax=#repo-content-pjax-container", "$");
                 final String href = sliptSubIndex[1].split("\">")[0].replace("=\"", ""); 
-                final boolean isFolder = !title.contains(".");                                              
+                if (href.equals("https://github.githubassets.com/")){
+                    continue;
+                }
+                final boolean isFolder = !title.contains(".");  
+                if (isFolder) {
+                    title = title.replace(" $", "#");
+                }                                            
                 gitHubHtmlList.add(GitHubHtml.builder()
                                              .title(title)
                                              .href(href) 
